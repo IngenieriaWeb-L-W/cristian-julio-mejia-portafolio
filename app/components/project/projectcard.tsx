@@ -1,20 +1,41 @@
-import React from 'react';
+'use client'
+import React, { useState } from "react";
+import "./project.css";
 
 interface ProjectProps {
-  imageSrc: string;
+  src: string;
   title: string;
   description: string;
+  texto: string;
+  githubLink: string;
 }
 
-const ProjectCard: React.FC<ProjectProps> = ({ imageSrc, title, description }) => {
+const Project: React.FC<ProjectProps> = ({ src, title, description, texto, githubLink }) => {
+  const [showDialog, setShowDialog] = useState(false);
   return (
-    <div className="w-[310px] h-[225px] bg-white border border-[#F0F0F6] flex flex-col items-center justify-center m-4">
-      <img src={imageSrc} alt={`${title} image`} width={68} height={68} className="mb-4" />
-      <h3 className="font-inter font-medium text-lg leading-[22.25px] mb-2">{title}</h3>
-      <p className="font-inter text-base leading-6 mb-4">{description}</p>
-      <button className="p-2 bg-blue-500 text-white rounded">Saber más</button>
+    <div className="border-black-100 flex h-[370px] w-[550px] flex-col items-center border p-2 bg-white">
+      <img src={src} alt="Descripción" className="[h-300 px] w-[80px] object-cover mb-2" />
+      <p className="mt-2 text-xl font-bold text-black whitespace-nowrap mb-2">{title}</p>
+      <p className="mt-1 text-center text-gray-600 mb-2">{description}</p>
+      <button onClick={() => setShowDialog(true)} className="mt-14 rounded bg-blue-500 px-4 py-2 text-white">
+        {texto}
+      </button>
+      {showDialog && (
+        <div className="dialog-animation fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-[50]">
+          <div className="dialog-box rounded border-green-500 bg-green-100 p-4 shadow-lg relative">
+            <button onClick={() => setShowDialog(false)} className="absolute top-0 right-0 mt-2 mr-2 rounded bg-red-500 px-2 py-1 text-white">
+              X
+            </button>
+            <h2 className="mb-2 text-xl font-bold">More details about the project</h2>
+            <p className="mb-4">{description}</p>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="text-green-700 underline">
+              View code on Github
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default ProjectCard;
+export default Project;

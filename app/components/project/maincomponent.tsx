@@ -1,27 +1,50 @@
-import React from 'react';
-import ProjectCard from './projectcard';
+// Proyectos.tsx
+import React from "react"
+import Project from "./projectcard"
 
-const MainComponent4 = () => {
-  // Asume que tienes un array de objetos de proyectos
-  const projectArray = [
-    {imageSrc: "/youtube.png", title: "Título del proyecto 1", description: "Descripción del proyecto 1"},
-    {imageSrc: "/youtube.png", title: "Título del proyecto 2", description: "Descripción del proyecto 2"},
-    {imageSrc: "/youtube.png", title: "Título del proyecto 3", description: "Descripción del proyecto 3"},
-    {imageSrc: "/youtube.png", title: "Título del proyecto 3", description: "Descripción del proyecto 4"},
-    // Agrega más objetos de proyectos aquí
-  ];
+const Proyectos = () => {
+  const proyectos = [
+    {
+      src: "/AI.png",
+      title: "Introducción IA",
+      description: "Data analytics project where you work with a telecommunications database",
+      texto: "Saber Má",
+      githubLink: "https://github.com/Camilo899/IntroduccionIA",
+    },
+    {
+      src: "/dl.png",
+      title: "Introducción Deep Learnig",
+      description: "In this project, deep learning techniques are applied to five different types of flowers.",
+      texto: "Saber Má",
+      githubLink: "https://github.com/Camilo899/FundamenteoDeepLearnig",
+    },
+    {
+      src: "/An.png",
+      title: "Hero Front-End",
+      description: "API that performs a basic CRUD for a given group of heroes",
+      texto: "Saber Más",
+      githubLink: "https://github.com/Proyecto-Integrador-1-2022/Heroes",
+    },
+    {
+      src: "/java.png",
+      title: "Hero Back-End",
+      description: "Connected Api Front-End with the Back-End, for the consumption of the application",
+      texto: "Saber Más ",
+      githubLink: " https://github.com/Proyecto-Integrador-1-2022/Backend.git",
+    },
+    
+  ]
 
   return (
-    <div className="w-[970px] h-[815px] bg-gray-200 border border-[#F0F0F6] flex flex-col items-center justify-center overflow-x-scroll">
-      <h2 className="font-inter font-bold text-2xl leading-[39.55px] mb-4">Portafolio de Proyectos</h2>
-      <p className="font-inter text-base leading-6 mb-8">Descripción</p>
-      <div className="flex">
-        {projectArray.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+    <section className="p-5">
+      <h1 className="mb-4 text-center text-2xl font-bold">Portafolio</h1>
+      <div className="flex flex-row gap-4 overflow-x-scroll p-4">
+        {proyectos.map((project, maincomponent) => (
+          <Project key={maincomponent} {...project} />
         ))}
       </div>
-    </div>
-  );
-};
+    </section>
+  )
+}
 
-export default MainComponent4;
+export default Proyectos
