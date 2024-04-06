@@ -6,6 +6,7 @@ import RightMenu from "./components/menu/rightmenu";
 export default function Home() {
   return (
     <div className="flex">
+      {/*Estutructura básica*/}
       <LeftMenu />
       <CenterContent />
       <RightMenu />

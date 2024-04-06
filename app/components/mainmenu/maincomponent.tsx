@@ -15,7 +15,7 @@ const MainComponent = () => {
         <Button text="HIRE ME" />
       </div>
       <div>
-        <Image src="/fd.png" alt="Imagen del desarrollador" width={325.72} height={459.09} className="top-[8px] left-[601px] opacity-1" />
+        <Image src="/perfil.png" alt="Imagen del desarrollador" width={225.72} height={359.09} className="top-[8px] left-[601px] opacity-1" />
       </div>
     </div>
   );
