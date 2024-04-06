@@ -14,7 +14,7 @@ const EducationCard: React.FC<EducationProps> = ({ university, student, graduati
       <div className="flex-1 p-2">
         <h3 className="font-inter font-medium text-lg leading-[22.25px] mb-2">{university}</h3>
         <p className="font-inter text-base leading-6 mb-2">{student}</p>
-        <p className="font-inter text-base leading-6">{graduationDate}</p>
+        <p className="font-inter leading-6 rounded bg-green-300 text-sm text-black font-bold">{graduationDate}</p>
       </div>
       <div className="flex-1 p-2">
         <h3 className="font-inter font-medium text-lg leading-[22.25px] mb-2">{degree}</h3>
