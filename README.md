@@ -1,24 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Hoja de vida
 
-First, run the development server:
+## Explanation
+- This is a project about designing my CV, using digital tools such as: NextJS, TailwindCSS, TypeScript, Icons, etc. This app has a vertical menu on the left side, where you set some personal information. The central content has data regarding my studies, my projects and relevant experience with the systems engineering career. Finally, on the right side links were established to some social networks where you can research more about the academic projects I have worked on.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Start the project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- To run the project locally you can follow these steps:
+  1) Clone the repository (git clone https://github.com/IngenieriaWeb-L-W/cristian-julio-mejia-portafolio.git)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  2) Update libraries and modules (If necessary)
+     This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  3) ## Getting Started
+
+     First, run the development server:
+     ```bash
+     npm run dev
+     or
+     yarn dev
+      or
+     pnpm dev
+     or
+     bun dev```
+
+4) Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
