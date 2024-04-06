@@ -7,7 +7,7 @@ import Footer from '../footer/footer';
 
 const CenterContent = () => {
   return (
-    <div className="w-[988px] h-[2811.09px] left-[326px] px-2.25 gap-10.5 opacity-1 bg-gray-200">
+    <div className="w-[988px] h-[2811.09px] left-[326px] px-2.25 gap-10.5 opacity-1 bg-orange-100 border border-black">
       <MainComponent/>
       <MainComponent2/>
       <MainComponent3/>

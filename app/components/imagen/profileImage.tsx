@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ProfileImage = () => {
   return (
-    <div className="relative bg-gray-200">
+    <div className="relative bg-orange-100">
       <Image
         src="/perfil.png" // Reemplaza esto con la ruta a tu imagen
         alt="Frontend" // Reemplaza esto con una descripción de la imagen

@@ -9,7 +9,7 @@ import ExtraSkills from '../skill/extraskills';
 
 const LeftMenu = () => {
   return (
-    <div className="w-[305px] h-[4517px] gap-2.5 opacity-1 bg-gray-200 flex flex-col items-center">
+    <div className="w-[305px] h-[4517px] gap-2.5 opacity-1 bg-orange-100 flex flex-col items-center border border-black">
       {/* Contenido del menú izquierdo */}
       
       <div className='w-[150px] h-[242px]'>
