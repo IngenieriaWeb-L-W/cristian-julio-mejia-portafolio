@@ -3,7 +3,7 @@ import SocialLinks from '../red/sociallinks';
 
 const RightMenu = () => {
   return (
-    <div className="w-[95px] h-[4517px] top-0.25 left-[1345px] py-18.25 pb-32.75 gap-4.75 opacity-1 bg-white flex flex-col items-center">
+    <div className="w-[95px] h-[4517px] top-0.25 left-[1345px] py-18.25 pb-32.75 gap-4.75 opacity-1 bg-gray-200 flex flex-col items-center">
       {/* Contenido del menú derecho */}
       <SocialLinks/>
     </div>
