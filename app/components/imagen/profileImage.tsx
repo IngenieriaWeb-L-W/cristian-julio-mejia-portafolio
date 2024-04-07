@@ -10,7 +10,7 @@ const ProfileImage = () => {
         width={135}
         height={135}
         className="rounded-full top-[50px] center-[74px] opacity-1"/>
-      <span className="absolute w-3 h-3 bg-green-400 rounded-full top-[118px] left-[118px] shadow-md opacity-1"></span>
+      <span className="absolute w-3 h-3 bg-green-400 rounded-full top-[138px] left-[118px] shadow-md opacity-1"></span>
     </div>
   );
 };
