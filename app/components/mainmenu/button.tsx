@@ -15,7 +15,7 @@ const Button: React.FC<Props> = ({ text }) => {
 
   return (
     <>
-      <button onClick={handleClick} className="w-[154px] h-[51px] top-[342px] left-[69px] bg-blue-400 rounded-t ml-14">
+      <button onClick={handleClick} className="w-[154px] h-[51px] top-[342px] left-[69px] bg-blue-400 rounded-full ml-14 color-gradient shadow">
         {text}
       </button>
 

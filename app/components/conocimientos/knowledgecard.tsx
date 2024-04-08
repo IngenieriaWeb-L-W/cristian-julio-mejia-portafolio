@@ -1,15 +1,16 @@
 import React from 'react';
+import Badge from '../atoms/badge2';
 
 interface Props {
   title: string;
   description: string;
-  imageSrc: string; // Añade una prop para la ruta de la imagen
+  icon: string; // Añade una prop para la ruta de la imagen
 }
 
-const KnowledgeCard: React.FC<Props> = ({ title, description, imageSrc }) => {
+const KnowledgeCard: React.FC<Props> = ({ title, description, icon }) => {
   return (
     <div className="w-[310px] h-[225px]  bg-white flex flex-col items-center justify-center whitespace-nowrap">
-      <img src={imageSrc} alt={`${title} image`} width={68} height={68} className="top-[720.09px] left-[130px] mb-2" /> {/* Usa img para mostrar la imagen */}
+      <Badge icon = {icon}/>
       <h3 className="font-bold text-lg mb-2">{title}</h3>
       <p className=" text-sm ">{description}</p>
     </div>

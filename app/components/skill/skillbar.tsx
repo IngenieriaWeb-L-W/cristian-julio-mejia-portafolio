@@ -3,8 +3,7 @@ import Image from 'next/image'; // Importa Image de 'next/image'
 import Badge from '../atoms/badge';
 
 interface Props {
-  skill: string;
-  
+  skill: string;  
   icon: string;
 }
 

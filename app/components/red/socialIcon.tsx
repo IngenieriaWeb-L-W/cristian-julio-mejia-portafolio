@@ -1,16 +1,17 @@
 import React from 'react';
+import Badge from '../atoms/badge3';
 
 interface Props {
-  imageSrc: string;
+  icon: string;
   profileUrl: string
 }
 
-const SocialIcon: React.FC<Props> = ({ imageSrc, profileUrl }) => {
+const SocialIcon: React.FC<Props> = ({ icon, profileUrl }) => {
   return (
-    <div className="w-[48px] h-[48px] opacity-1">
+    <div className="">
       
         <a href={profileUrl} target="_blank" rel="noopener noreferrer">
-          <img src={imageSrc} alt="Icono de red social" width={48} height={48} /> {/* Usa img para mostrar el icono */}
+        <Badge icon = {icon}/> {/* Usa img para mostrar el icono */}
         </a>
     
     </div>
